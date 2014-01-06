@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/apNam"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/apNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/log"
+            android:text="EasyPizza"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#3090C7"
+            android:textSize="30dp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/apNam"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/apNam"
+            android:text="Customer"
+            android:textColor="#3090C7"
+            android:textStyle="italic|bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/ordcode" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check"
+            android:textColor="#3090C7"
+            android:textSize="20dp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/summ"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/penalty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/time_penalty"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/tip_deliv"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/get_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Total"
+            android:textColor="#3090C7"
+            android:textSize="20dp"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/second"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/totbill"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/payment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Pay with PayPal"
+            android:textColor="#3090C7"
+            android:textSize="20dp"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

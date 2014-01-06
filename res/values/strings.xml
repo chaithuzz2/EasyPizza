@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EasyPizza</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="customer">Customer name</string>
+    <string name="ordsum">Order Summary</string>
+    <string name="time">Time</string>
+    <string name="bilamo">Bill amount</string>
+    <string name="delivmobnum">Deliverer\'s mobile number</string>
+    <string name="location">Location</string>
+    <string name="time_penalty">Time penalty(in mins)</string>
+    <string name="tip_deliv">Tip for the Delivery guy</string>
+    <string name="ordcode">Order code</string>
+
+</resources>

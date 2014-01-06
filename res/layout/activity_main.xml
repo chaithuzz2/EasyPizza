@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="266dp"
+        android:layout_gravity="bottom" >
+
+        <ImageView
+            android:id="@+id/log"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cust"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_launcher" />
+
+        <Button
+            android:id="@+id/cust"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Customer"
+            android:textColor="#3090C7"
+            android:textSize="30dp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/apNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/log"
+            android:layout_alignRight="@+id/cust"
+            android:layout_alignTop="@+id/log"
+            android:layout_toRightOf="@+id/log"
+            android:text="EasyPizza"
+            android:textColor="#3090C7"
+            android:textSize="40dp"
+            android:textStyle="italic|bold"            
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/apNam"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="powered by"
+            android:textColor="#3090C7"
+            android:textSize="15dp"
+            android:textStyle="italic|bold"            
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/paypal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/power"
+            android:layout_alignBottom="@+id/power"
+            android:layout_toRightOf="@+id/power"
+            android:text=" PayPal"
+            android:textColor="#3090C7"
+            android:textSize="20dp"
+            android:textStyle="italic|bold"            
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.70" >
+
+        <Button
+            android:id="@+id/merc"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Merchant"
+            android:textColor="#3090C7"
+            android:textSize="30dp"
+            android:textStyle="italic|bold"             />
+
+    </RelativeLayout>
+
+</LinearLayout>
