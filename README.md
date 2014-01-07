@@ -41,16 +41,16 @@ Problems solved
 Requirements
 ------------
 ------------
-A Paypal account
-A Smart Phone
+1)A Paypal account
+2)A Smart Phone
 
 Technologied used 
 ------------------
 ------------------
-Android : Minimum - HoneyComb
-PayPal-SDK
-Sandbox accounts for testing 
-Used Device for testing(Works best on Samsung Galaxy Tab 2 GT-P3100)
+1)Android : Minimum - HoneyComb
+2)PayPal-SDK
+3)Sandbox accounts for testing 
+4)Used Device for testing(Works best on Samsung Galaxy Tab 2 GT-P3100)
 
 
 
